@@ -9,3 +9,12 @@ Setting Up Eclipse
 * Click Apply
 
 To Download, click the Run External Tool button on the toolbar (next to the regular run button)
+
+Setting Up a Project
+====================
+
+* Right click on the Project -> Properties
+* Click on Java Build Path
+* Click on Libraries
+* Click Add External JARs...
+* Set it to the provided libkovan.jar

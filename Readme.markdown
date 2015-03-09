@@ -1,5 +1,5 @@
-Preparation
-===========
+Introduction
+====
 
 * Download this Link project's ZIP
 * Create a `link` directory for these tools

@@ -13,15 +13,19 @@ Preparation
 * Change directory to the `link` directory
   - Win7: `cd \tools\link`
   - OS X: `cd /opt/tools/link`
- * 
+ * Log into the Link (where 10.0.170.13 is your Link's IP address)
+  - Win7: Type `putty -ssh root@10.0.170.13` 
+  - OS X: Type `ssh root@10.0.170.13` 
+* Accept the security certificate by pressing or typing yes (depending on OS)
+* Log into each Link you plan to use
 
 Setting Up Eclipse
 ==================
 
-* Click on Run -> External Tools -> External Tools Configurations
+* Click on Run -> External Tools -> External Tools Configurations...
 * Right click on Program -> New
-* Set the name of your configuration to "Send to Link XX"
-* Set the Location to the provided file for your OS. (click on Browse File System... and navigate to the link\_eclipse folder)
+* Set the Name: `Send to Link XX` (where `XX` is the number or name of your Link)
+* Set the Location: `C:\tools\link\python_win.bat`
 * Set the Working Directory to the provided link\_eclipse folder. (click on Browse File System...)
 * Set the arguments to: `10.0.170.13 ${project_name} ${workspace_loc}${project_path}` (where 10.0.170.13 is the IP address of your Link)
 * Click Apply

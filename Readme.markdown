@@ -1,6 +1,14 @@
 Introduction
 ====
 
+This repository supports the automatic transfer of code from Eclipse to the Link robot controller.
+
+There are four possible configurations supported:
+- Python on Windows 7
+- Java on Windows 7
+- Python on OS X
+- Java on OS X
+
 * Download this Link project's ZIP
 * Create a `link` directory for these tools
   - Don't place within a specific user's workspace

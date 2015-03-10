@@ -4,27 +4,29 @@ Introduction
 This repository supports the automatic transfer of code from Eclipse to the Link robot controller.
 
 There are four possible configurations supported:
-- Python on Windows 7
-- Java on Windows 7
-- Python on OS X
-- Java on OS X
+* Python on Windows 7
+* Java on Windows 7
+* Python on OS X
+* Java on OS X
 
-* Download this Link project's ZIP
-* Create a `link` directory for these tools
-  - Don't place within a specific user's workspace
-  - Win7: consider `C:\tools\link`
-  - OS X: consider: `/opt/tools/link` 
-* Extract the Link project into the `link` directory
-* Open a terminal window
-  - Win7: Start -> Run -> cmd
-  - OS X: Open the Terminal
-* Change directory to the `link` directory
-  - Win7: `cd \tools\link`
-  - OS X: `cd /opt/tools/link`
- * Log into the Link (where 10.0.170.13 is your Link's IP address)
-  - Win7: Type `putty -ssh root@10.0.170.13` 
-  - OS X: Type `ssh root@10.0.170.13` 
-* Accept the security certificate by pressing or typing yes (depending on OS)
+For the purposes of this document we are making the following assumptions:
+* Your Link's IP address is `192.168.1.13` (replace with your actual IP address)
+* Your Link's ID is `13` (replace with the last octet of your IP address or `JOE` or whatever)
+* Your Tools directory is `C:\tools\link\` or `/opt/tools/link` (change as desired to someplace available to all users)
+* You have downloaded/extracted this repository into the Tools directory
+* You have Java installed
+* You have Eclipse installed
+* You have Python 2.7 installed (if using Python)
+
+Follow the steps below for the installation desired...
+
+Python on Windows 7
+====
+
+* Open a terminal window (Start -> Run -> cmd)
+* Change directory to the `link` directory (`cd C:\tools\link`)
+* Log into the Link (`putty -ssh root@10.0.170.13`) 
+* Accept the security certificate by typing yes 
 * Log into each Link you plan to use
 
 Setting Up Eclipse

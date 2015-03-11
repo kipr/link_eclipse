@@ -39,7 +39,7 @@ Python on Windows 7
 * Name: `Send to Link `<**Link Name**>
 * Location: <**Tools Dir**>`python_win.bat`
 * Working Directory: <**Tools Dir**>
-* Arguments: <**Link iIP**>` ${project_name} ${workspace_loc}${project_path}` 
+* Arguments: <**Link IP**>`   ${project_name}   ${workspace_loc}${project_path}` 
 * Click [Apply]
 * Click [Close]
 

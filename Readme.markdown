@@ -19,6 +19,7 @@ For the purposes of this document we are making the following assumptions:
 * You have Java installed
 * You have Eclipse installed
 * You have Python 2.7 installed (if using Python)
+* You have the Eclipse PyDev plug-in installed (if using Python)
 
 Follow the steps below for the installation desired...
 
@@ -35,12 +36,27 @@ Python on Windows 7
 * Start Eclipse
 * Click [Run -> External Tools -> External Tools Configurations...]
 * Right click [Program -> New]
-* Set the Name: `Send to Link `<**Link Name**>
-* Set the Location: <**Tools Dir**>`python_win.bat`
-* Set the Working Directory: <**Tools Dir**>
-* Set the arguments: <**Link iIP**>` ${project_name} ${workspace_loc}${project_path}` 
+* Name: `Send to Link `<**Link Name**>
+* Location: <**Tools Dir**>`python_win.bat`
+* Working Directory: <**Tools Dir**>
+* Arguments: <**Link iIP**>` ${project_name} ${workspace_loc}${project_path}` 
 * Click [Apply]
 * Click [Close]
+
+**Test Download**
+* Click [File -> New -> Other...]
+* Wizards: `PyDev Project`
+* Click [Next]
+* Project name: `HelloRobot`
+* Click [Create 'src' folder and add it to the PYTHONPATH]
+* Click [Finish]
+* Expand [<**Project**>] (in PyDev Package Explorer on left side of screen)
+* Right click [src -> New -> PyDev Module]
+* Package: (leave blank)
+* Name: `test`
+* Click [Finish]
+* Click [Ok]
+* (copy from Tools Directory, but how???)
 
 To Download, click the Run External Tool button on the toolbar (next to the regular run button). Make sure the source file view is active before clicking it!
 

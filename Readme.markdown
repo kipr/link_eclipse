@@ -25,7 +25,7 @@ Python on Windows 7
 
 * Open a terminal window [Start -> Run -> cmd]
 * Change directory to the `link` directory `cd C:\tools\link` (replace with your Tools directory)
-* Log into the Link `putty -ssh root@`<**yourIP**>
+* Log into the Link `putty -ssh root@<**your IP**>`
 * `192.168.1.13` (replace with your IP address) 
 * Accept the security certificate by typing yes 
 * Start Eclipse

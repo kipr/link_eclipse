@@ -43,20 +43,25 @@ Python on Windows 7
 * Click [Apply]
 * Click [Close]
 
-**Test Download**
+**Setup the Project**
 * Click [File -> New -> Other...]
 * Wizards: `PyDev Project`
 * Click [Next]
-* Project name: `HelloRobot`
+* Project name: `LegoBot`
 * Click [Create 'src' folder and add it to the PYTHONPATH]
 * Click [Finish]
-* Expand [<**Project**>] (in PyDev Package Explorer on left side of screen)
+* (add kovan.py to Project)
+
+**Create main.py**
+* Expand [LegoBot] (in PyDev Package Explorer on left side of screen)
 * Right click [src -> New -> PyDev Module]
 * Package: (leave blank)
-* Name: `test`
+* Name: `main`
 * Click [Finish]
 * Click [Ok]
 * (copy from Tools Directory, but how???)
+
+**Test Download**
 
 To Download, click the Run External Tool button on the toolbar (next to the regular run button). Make sure the source file view is active before clicking it!
 

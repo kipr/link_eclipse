@@ -50,6 +50,12 @@ Python on Windows 7
 * Project name: `LegoBot`
 * Click [Create 'src' folder and add it to the PYTHONPATH]
 * Click [Finish]
+* Click [Windows - Preferences]
+* Click [PyDev - Interpreters - Python Interpreter]
+* In Libraries tab, click [New Folder]
+* Browse to Tools Directory
+* Click [Ok]
+* Click [Ok]
 * (add kovan.py to Project)
 
 **Create main.py**

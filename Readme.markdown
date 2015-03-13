@@ -1,14 +1,14 @@
 Introduction
 ====
 
-This repository supports the automatic transfer of code from Eclipse to the Link robot controller.
+**This repository supports the automatic transfer of code from Eclipse to the Link robot controller.**
 
 In the preparation of this Readme these defaults are used:  (replace as appropriate for your system)
-* **192.168.1.45** - replace with the IP address of your Link
-* **DemoBot** - replace with a name for your robot
-* **C:\tools\link_eclipse\** - replace with the location for your Tools directory
-- OS X users might use `/opt/tools/link_eclipse/`   
-- ProTip: put the Tools directory in a place available to all users
+* **192.168.1.45** - the IP address of your Link
+* **DemoBot** - a name for your robot
+* **C:\tools\link_eclipse\** - the location for your Tools directory
+ - OS X users might use `/opt/tools/link_eclipse/`   
+ - ProTip: put the Tools directory in a place available to all users
 
 For the purposes of this Readme the following assumptions are made:
 * You have downloaded & extracted this repository into C:\tools\link_eclipse\
@@ -61,16 +61,16 @@ Python Instructions
 * Right click [src -> New -> PyDev Module]
 * Package: (leave blank)
 * Name: `main`  
-- **(IMPORTANT: the python script you want to run first must be named main.py)**
+ - **(IMPORTANT: the python script you want to run first must be named main.py)**
 * Click [Finish]
 * Click [Ok]
 * Open [C:\tools\link_eclipse\example.py] and copy the contents into the Eclipse window
-- ProTip: It might be easier copy this file from GitHub
+ - ProTip: It might be easier copy this file from GitHub
 
 **Test Download**
 * With the [main.py] window open
 * Click the [Run External Tool] button on the toolbar
-- it is just to the right of the normal [Run] button
+ - it is just to the right of the normal [Run] button
 * Look for a one line transfer message in the console window
 
 Java Instructions

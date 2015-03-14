@@ -5,7 +5,7 @@
 @echo cd /tmp >> win.cmd
 @echo mv ^*.kiss '/kovan/archives/%2' >> win.cmd
 @echo mkdir -p '/kovan/bin/%2' >> win.cmd
-@echo echo -e '#!/bin/bash\npython $(dirname $0)/src/main.py' ^> /kovan/bin/%2/%2 >> win.cmd
+@echo echo -e '#!/bin/bash\npython $(dirname $0)/main.py' ^> /kovan/bin/%2/%2 >> win.cmd
 @echo chmod +x /kovan/bin/%2/%2 >> win.cmd
 @putty -ssh root@%1 -m win.cmd
-@pscp -r "%3/"* "root@%1:/kovan/bin/%2"
+@pscp -r "%3\src\*.py" "root@%1:/kovan/bin/%2"

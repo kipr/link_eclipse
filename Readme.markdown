@@ -112,6 +112,8 @@ if __name__ == "__main__":
 * In the left pane, click [Send Python to DemoBot]
 * Click [Run]
 * Look for the following transfer message in the console window
+` need to fill this with the right message... `
+* Launch your code on the Link [Programs - DemoBot - Run]
 
 Java Instructions
 ====================

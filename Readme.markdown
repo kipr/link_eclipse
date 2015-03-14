@@ -77,6 +77,7 @@ Python Instructions
 * Expand [DemoBot] (in PyDev Package Explorer on left side of screen)
 * Right click [src -> New -> PyDev Module]
 * Package: (leave blank)
+ - Packages are currently not supported.
 * Name: `main`  
  - **(IMPORTANT: the python script you want to run first must be named main)**
 * Click [Finish]
@@ -105,6 +106,7 @@ def testMotors() :
 if __name__ == "__main__":
     main()
 ```
+* Click [File - Save]
 
 **Test Download**
 * With the [main.py] window open
@@ -112,7 +114,7 @@ if __name__ == "__main__":
 * In the left pane, click [Send Python to DemoBot]
 * Click [Run]
 * Look for the following transfer message in the console window
-` need to fill this with the right message... `
+ - ` main.py                   | 0 kB |   0.3 kB/s | ETA: 00:00:00 | 100% `
 * Launch your code on the Link [Programs - DemoBot - Run]
 
 Java Instructions

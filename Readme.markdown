@@ -65,7 +65,7 @@ Python Instructions
 * Click radio button: [Create 'src' folder and add it to the PYTHONPATH]
 * Click [Finish]
 
-** Add Kovan Library**
+**Add Kovan Library**
 * Click [Window - Preferences]
 * Click [PyDev - Interpreters - Python Interpreter]
 * In Libraries tab, click [New Folder]

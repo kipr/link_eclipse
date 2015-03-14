@@ -35,9 +35,13 @@ Python Instructions
 * Click [Run -> External Tools -> External Tools Configurations...]
 * Right click [Program -> New]
 * Name: `Send Python to DemoBot`
-* Location: `C:\tools\link_eclipse\python_win.bat`
+ - you can name it anything you want
+* Location: `C:\tools\link_eclipse\win_python.bat`
+ - The [Browse File System...] button saves typing
 * Working Directory: `C:\tools\link_eclipse\`
-* Arguments: `192.168.1.45   ${project_name}   ${workspace_loc}${project_path}` 
+ - Again the [Browse File System...] is your friend
+* Arguments: `192.168.1.45  ${project_name}  ${container_loc}` 
+ - don't change anything except the IP address!
 * Click [Apply]
 * Click [Close]
 
@@ -46,15 +50,19 @@ Python Instructions
 * Wizards: `PyDev Project`
 * Click [Next]
 * Project name: `DemoBot`
+* Project type: [Python]
+* Grammer Version: [2.7]
+* Interpreter: [Default]
 * Click radio button: [Create 'src' folder and add it to the PYTHONPATH]
 * Click [Finish]
+
+** Add Kovan Library**
 * Click [Windows - Preferences]
 * Click [PyDev - Interpreters - Python Interpreter]
 * In Libraries tab, click [New Folder]
-* Browse to Tools Directory
+* Browse to `C:\tools\link-eclipse\
 * Click [Ok]
 * Click [Ok]
-* (add kovan.py to Project)
 
 **Create main.py**
 * Expand [DemoBot] (in PyDev Package Explorer on left side of screen)
@@ -63,9 +71,10 @@ Python Instructions
 * Name: `main`  
  - **(IMPORTANT: the python script you want to run first must be named main.py)**
 * Click [Finish]
+* Template: [<Empty>] 
 * Click [Ok]
 * Open [C:\tools\link_eclipse\example.py] and copy the contents into the Eclipse window
- - ProTip: It might be easier copy this file from GitHub
+ - ProTip: It might be easier copy this file from GitHub (use [raw] to preserve spacing)
 
 **Test Download**
 * With the [main.py] window open

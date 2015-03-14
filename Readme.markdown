@@ -3,15 +3,14 @@ Introduction
 
 **This repository supports the automatic transfer of code from Eclipse to the Link robot controller.**
 
-In the preparation of this Readme these defaults are used:  (replace as appropriate for your system)
+**Defaults:** (replace as appropriate for your system)
 * **192.168.1.45** - the IP address of your Link
 * **DemoBot** - a name for your robot
 * **C:\tools\link_eclipse\** - the location for your Tools directory
  - OS X users might use `/opt/tools/link_eclipse/`   
  - ProTip: put the Tools directory in a place available to all users
 
-For the purposes of this Readme the following assumptions are made:
-* You have downloaded & extracted this repository into C:\tools\link_eclipse\
+**Assumptions:**
 * You have Java installed
 * You have Eclipse installed
 * You have Python 2.7 installed (if using Python)
@@ -19,14 +18,24 @@ For the purposes of this Readme the following assumptions are made:
 * You know how to open a terminal or cmd window
 * You know how to open a text file and copy the contents into an Eclipse editor window
 
-Instructions are provided to install Java and Python transfer mechanisms.  You do not need to install both, but using both in the same Eclipse instance is supported.  The instructions for each are provided below and can be run without reference to each other.
+**Download the Link_Eclipse Toolset**
+* In a browser, open http://github.com/kipr/link_eclipse
+* On the right pane, click [Download ZIP]
+* Save the file to a directory can find
+* Open that directory and extract/unzip into `C:\tools\`
+ - If this worked correctly there should be files in `C:\tools\link_eclipse-master\`
+* Rename `C:\tools\link_eclipse-master\` to `C:\tools\link_eclipse\`
+ - (remove the `-master` from the end)
+
+**Note:**
+Instructions are provided to install Link transfer software for both Java and Python.  You do not need to install both, but using both in the same Eclipse instance is supported.  The instructions for each are provided below and can be run without reference to each other.
 
 Python Instructions 
 ====
 
-**Setup Secure Shell**
+**Setup Secure Shell**  (Only required the first time you connect to the Link)
 * Open a terminal window 
-* Change directory to the Tools directory `cd  \tools\link_eclipse\
+* Change directory to the Tools directory `cd  \tools\link_eclipse\`
 * Log into the Link `putty -ssh root@192.168.1.45`
 * Accept the security certificate `yes` 
 
@@ -40,7 +49,7 @@ Python Instructions
  - The [Browse File System...] button saves typing
 * Working Directory: `C:\tools\link_eclipse\`
  - Again the [Browse File System...] is your friend
-* Arguments: `192.168.1.45  ${project_name}  ${container_loc}` 
+* Arguments: `192.168.1.45  ${project_name}  ${project_loc}` 
  - don't change anything except the IP address!
 * Click [Apply]
 * Click [Close]
@@ -57,7 +66,7 @@ Python Instructions
 * Click [Finish]
 
 ** Add Kovan Library**
-* Click [Windows - Preferences]
+* Click [Window - Preferences]
 * Click [PyDev - Interpreters - Python Interpreter]
 * In Libraries tab, click [New Folder]
 * Browse to `C:\tools\link-eclipse\
@@ -69,18 +78,40 @@ Python Instructions
 * Right click [src -> New -> PyDev Module]
 * Package: (leave blank)
 * Name: `main`  
- - **(IMPORTANT: the python script you want to run first must be named main.py)**
+ - **(IMPORTANT: the python script you want to run first must be named main)**
 * Click [Finish]
-* Template: [<Empty>] 
+* Template: [Empty] 
 * Click [Ok]
-* Open [C:\tools\link_eclipse\example.py] and copy the contents into the Eclipse window
- - ProTip: It might be easier copy this file from GitHub (use [raw] to preserve spacing)
+ 
+**Populate main.py**
+* Copy the following code into the main.py window:
+``` py
+from kovan import msleep
+from kovan import motor
+from kovan import ao
+
+def main() :
+    print "Starting...."
+    testMotors()
+    print "Finished"
+
+def testMotors() :
+    motor(1,100)
+    motor(3,100)
+    msleep(500)
+    ao()
+
+
+if __name__ == "__main__":
+    main()
+```
 
 **Test Download**
 * With the [main.py] window open
-* Click the [Run External Tool] button on the toolbar
- - it is just to the right of the normal [Run] button
-* Look for a one line transfer message in the console window
+* Click [Run - External Tools - External Configurations...]
+* In the left pane, click [Send Python to DemoBot]
+* Click [Run]
+* Look for the following transfer message in the console window
 
 Java Instructions
 ====================
